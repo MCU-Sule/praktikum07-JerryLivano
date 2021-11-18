@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="Jerry Livano 2172002">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let harga = prompt("Berapa harga belanjaan anda?");
+        let bayar = prompt("Berapa uang yang dibayar?");
+        let kembali = bayar - harga;
+        let a = Math.floor(kembali/100000);
+        let hasila = kembali - (a*100000);
+        let b = Math.floor(hasila/50000);
+        let hasilb = hasila - (b*50000);
+        let c = Math.floor(hasilb/20000);
+        let hasilc = hasilb - (c*20000);
+        let d = Math.floor(hasilc/10000);
+        let hasild = hasilc - (d*10000);
+        let e = Math.floor(hasild/5000);
+        let hasile = hasild - (e*5000);
+        let f = Math.floor(hasile/2000);
+        let hasilf = hasile - (f*2000);
+        let g = Math.floor(hasilf/1000);
+        let hasilg = hasilf - (g*1000)
+        let h = Math.floor(hasilg/500);
+        let hasilh = hasilg - (h*500);
+        let sisa = hasilh
+        document.write("Harga belanjaan anda adalah Rp." + harga + "<br>");
+        document.write("Uang yang dibayarkan adalah Rp." + bayar + "<br><br>");
+        document.write("Kembalian anda adalah Rp." + kembali + " dengan rincian sebagai berikut: <br>");
+            if (a > 0) {
+                
+                document.write("Uang Rp.100000 sebanyak " + a + " lembar." + "<br>");
+            }
+            if (b > 0) {
+                
+                document.write("Uang Rp.50000 sebanyak " + b + " lembar." + "<br>");
+            }
+            if (c > 0) {
+                
+                document.write("Uang Rp.20000 sebanyak " + c + " lembar." + "<br>");
+            }
+            if (d > 0) {
+                
+                document.write("Uang Rp.10000 sebanyak " + d + " lembar." + "<br>");
+            }
+            if (e > 0) {
+                
+                document.write("Uang Rp.5000 sebanyak " + e + " lembar." + "<br>");
+            }
+            if (f > 0) {
+                
+                document.write("Uang Rp.2000 sebanyak " + f + " lembar." + "<br>");
+            }
+            if (g > 0) {
+                
+                document.write("Uang Rp.1000 sebanyak " + g + " lembar." + "<br>");
+            }
+            if (h > 0) {
+                
+                document.write("Uang Rp.500 sebanyak " + h + " lembar." + "<br>");
+            }
+            if (sisa > 0) {
+                
+                document.write("Sisa kembalian Rp." + sisa);
+            }
+    </script>
+</body>
+</html>
